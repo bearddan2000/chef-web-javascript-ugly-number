@@ -1,0 +1,19 @@
+[2020-11-04 19:03:33 INFO]: install::setup-logging ended
+================
+[2020-11-04 19:03:33 INFO]: install::start-up started
+[2020-11-04 19:03:33 INFO]: install::start-up starting services
+[2020-11-04 19:03:33 INFO]: install::start-up ended
+================
+[2020-11-04 19:03:49 INFO]: install::root-check started
+[2020-11-04 19:03:49 INFO]: install::root-check ended
+================
+[2020-11-04 19:03:49 INFO]: install::docker-check started
+[2020-11-04 19:03:49 INFO]: install::docker-check ended
+================
+[2020-11-04 19:03:49 INFO]: install::docker-compose-check started
+[2020-11-04 19:03:49 INFO]: install::docker-compose-check ended
+================
+[2020-11-04 19:03:49 INFO]: install::tear-down started
+[2020-11-04 19:03:49 INFO]: install::tear-down starting services
+[2020-11-04 19:03:49 INFO]: install::tear-down ended
+================

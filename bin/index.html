@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ugly Number</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Ugly Number</a>
+  </nav>
+  ​<div class="container" style="margin:2em;">
+    <div class="row">
+      <div class="col-sm-2">
+        <label for="low">N:</label>
+        <input type="text" id="n" name="low" value="">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-2">
+        <textarea name="answer" id="a" cols="30" rows="10"></textarea>
+        <DIV></DIV>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-2">
+        <button type="button" name="button">Find primes</button>
+        <DIV></DIV>
+      </div>
+    </div>
+  </DIV>
+  <script src="js/ugly-number.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script>
+    $(function() {
+      $('button').click(function() {
+        var output = "N must be less then 65."
+        $('textarea').empty();
+        var low = ToInt('n');
+        output = getNthUglyNo(low);
+        $('textarea').text(output);
+      });
+    });
+
+    function ToInt(id) {
+      var x = $('#' + id).val();
+      return parseInt(x);
+    }
+  </script>
+</body>
+
+</html>
